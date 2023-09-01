@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package="github.com/ROHITHSAKTHIVEL/Project_jwcToken-sep-1";
+
+import "proto/user.proto";
+
+message SingUpUserInput{
+    string name=1;
+    string email=2;
+    string passwordd=3;
+    string passwordConfirm=4;
+}
+
+message SignUpUserResponse{ User user=1;}

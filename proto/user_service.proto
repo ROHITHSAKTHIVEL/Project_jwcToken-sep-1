@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto;
+
+import "proto/user.proto";
+
+option go_package="github.com/ROHITHSAKTHIVEL/Project_jwcToken-sep-1";
+
+service UserService {
+    rpc GetMe(GetMeRequest) returns (UserResponse){}
+}
+message GetMeRequest {
+    string Id=1;
+}
